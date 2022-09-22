@@ -19,7 +19,7 @@ The original repo : `https://github.com/gurdeep999/premintChecker`
 
 ## 2. Installation
 
-1. Git clone [`git@github.com](mailto:git@github.com):websterhasnoheart/premint_checker.git`
+1. Git clone `git@github.com:websterhasnoheart/premint_checker.git`
 2. cd `premint_checker`
 3. `py run.py`
 4. input `premint link` eg : [`https://www.premint.xyz/Luskorpnft/`](https://www.premint.xyz/Luskorpnft/)
