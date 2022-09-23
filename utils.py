@@ -1,4 +1,7 @@
 import csv
+from multiprocessing.sharedctypes import Value
+import os, sys
+
 
 def get_wallet_info():
     wallets = []
@@ -8,14 +11,15 @@ def get_wallet_info():
             wallets.append(line)
     return wallets
         
-
-
+        
 def get_base_url():
-    premint_url = input("Please enter your Premint raffle url: ").split('/')
-
-    # using destructured assignment
-    https, _, domain, raffle, *end = premint_url
-    return f"{https}//{domain}/{raffle}"
+    try:
+        premint_url = input("Please enter your Premint raffle url: ").split('/')
+        https, _, domain, raffle, *end = premint_url
+        return f"{https}//{domain}/{raffle}"
+    except ValueError:
+        print("Invalid premint raffle link, please try again!")
+        os.execl(sys.executable, sys.executable, *sys.argv)
 
     # if using regex, replace line 17 18 with the following code
     # url = re.search("^http.*[p|P]remint.xyz/.*?(?=/)", premint_url)
