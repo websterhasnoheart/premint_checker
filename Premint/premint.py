@@ -15,7 +15,7 @@ class Premint(webdriver.Chrome):
         self.base_url = get_base_url()
         self.wallets = get_wallet_info()
         self.results = []
-        self.endpoint = 'https://geth.mytokenpocket.vip'
+        self.endpoint = 'https://geth.mytokenpocket.vip' # Replace this with your own provider if it does not work
         self.connection = Web3(HTTPProvider(self.endpoint))
 
         
@@ -38,8 +38,6 @@ class Premint(webdriver.Chrome):
         print("Fetching results. Please wait...")
         try:
             for wallet in self.wallets:
-                # if using regex
-                # self.get(f"{self.base_url}/verify/?wallet={wallet}")
                 wallet_name = wallet['wallet name']
                 wallet_address = wallet['wallet address']
                 url = f"{self.base_url}/verify/?wallet={wallet_address}"
