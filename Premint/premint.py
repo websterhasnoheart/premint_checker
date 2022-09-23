@@ -2,7 +2,7 @@ from selenium import webdriver
 import os
 from prettytable import PrettyTable
 from Premint.verification import Verification
-from utils import get_base_url, get_wallets, get_wallet_info
+from utils import get_base_url, get_wallet_info
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
 from web3 import Web3, HTTPProvider
