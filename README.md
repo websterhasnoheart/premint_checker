@@ -36,7 +36,7 @@ The original repo : `https://github.com/gurdeep999/premintChecker`
 
 ### 4. Warning
 
-Please do not run the program too frequent(example : 100 wallets for 3 times in 3 mins), as you might get detected and warning from premint.xyz
+- Please do not run the program too frequent(example : 100 wallets for 3 times in 3 mins), as you might get detected and warning from premint.xyz
 
 ![image](https://user-images.githubusercontent.com/66870019/192098318-27901f57-dfaa-491e-912a-3486120de3e5.png)
 
