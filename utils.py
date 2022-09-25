@@ -5,7 +5,7 @@ import os, sys
 
 def get_wallet_info():
     wallets = []
-    with open('mywallets.csv') as file:
+    with open('testing_wallets.csv') as file:
         reader = csv.DictReader(file, skipinitialspace=True)
         for line in reader:
             wallets.append(line)

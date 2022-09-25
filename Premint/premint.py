@@ -36,6 +36,7 @@ class Premint(webdriver.Chrome):
 
     def verify_wallets(self):
         print("Fetching results. Please wait...")
+        wallet_count = 0
         try:
             for wallet in self.wallets:
                 wallet_name = wallet['wallet name']
@@ -47,10 +48,11 @@ class Premint(webdriver.Chrome):
                 verify.land_page(url)
                 phrase = verify.check_win()
                 self.results.append([wallet_name, wallet_address, phrase, balance])
-
+                wallet_count += 1
         except Exception as e:
             self.get_screenshot_as_file("screenshot.png")
             print(e)
+        return wallet_count
 
     def display_results(self):
         print("Displaying Results...")

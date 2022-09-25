@@ -10,5 +10,11 @@ class Verification:
 
     def check_win(self):
         card = self.driver.find_element(By.CLASS_NAME, "card")
-        sub_heading = card.find_element(By.CLASS_NAME, "heading-1").text + card.find_element(By.CLASS_NAME, "heading-3").text
-        return sub_heading
+        try:
+            # The emoji extraction might fail
+            emoji = card.find_element(By.CLASS_NAME, "heading-1").text
+        except:
+            emoji = ""
+        text = card.find_element(By.CLASS_NAME, "heading-3").text
+        result = emoji + text
+        return result
