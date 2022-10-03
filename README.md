@@ -8,7 +8,7 @@ The original repo : `https://github.com/gurdeep999/premintChecker`
 - A template for filling in wallet addresses is provided as `mywallets.csv` (please do not change the name of the csv file)
 - Improvements were made to adapt the authors’ situation
 - Wallet balance will also be checked
--  **As premint is busting their ass to eliminate premint bots, this repo will stop updating itself while remaining functional, but a more advanced version of premint checker with proxy support is coming soon.**
+-  **As premint is busting their ass to eliminate premint bots, this repo will stop updating itself while remaining functional, but a more advanced version of premint checker with proxy support is [here](https://github.com/websterhasnoheart/Premint_Checker_with_Proxy_Support)**
 ## 1. Requirement
 
 - `Python 3.8`
